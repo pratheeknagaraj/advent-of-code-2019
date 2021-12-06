@@ -7,9 +7,6 @@ with open('02_input', 'r') as f:
 
 program = [int(i) for i in lines[0].strip().split(',')]
 
-program[1] = 12
-program[2] = 2
-
 def run(program):
     index = 0
 
@@ -35,18 +32,6 @@ def stage(program, noun, verb):
     p[1] = noun
     p[2] = verb
     return p
-
-# Tests
-
-# p1 = [1,0,0,0,99]
-# p2 = [2,3,0,3,99]
-# p3 = [2,4,4,5,99,0]
-# p4 = [1,1,1,4,99,5,6,0,99]
-
-# print(run(p1))
-# print(run(p2))
-# print(run(p3))
-# print(run(p4))
 
 complete = False
 
